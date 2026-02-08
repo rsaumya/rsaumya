@@ -1,5 +1,3 @@
-## Hi there 👋
-
 ## 👋 About Me
 
 I’m an **M.Tech Computational and Data Science student** with a strong interest in **machine learning and data-driven problem-solving**. 
