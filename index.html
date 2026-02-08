@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website">
+    <title>Software Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><img src="logos/user.png" alt="Logo"></div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <br><span class="highlight">Saumya Ranjan Mahana</span></h1>
+            <p class="hero-subtitle">Aspiring Machine Learning Engineer</p>
+            <p class="hero-description">Passionate about building innovative solutions and learning new technologies</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Computational and Data Science student passionate about machine learning and problem-solving. I enjoy working on challenging projects
+                        across data science and physics that emphasize analytical thinking, modeling, and real-world impact.
+                    </p>
+                    <p>
+                        Currently, I am pursuing my M.Tech in Computational and Data Science at National Institute of Technology, Karnataka.
+                    </p>
+                    <p>
+                        I am a quick learner and always looking for new challenges and opportunities to grow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"><img src="Projects/SRT.jpeg" alt="Small Radio Telescope"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Small Radio Telescope (21 cm Hydrogen Line)</h3>
+                        <p class="project-description">
+                            A small radio telescope built to observe the 21 cm hydrogen line in the Milky Way.
+                            The design is a partial reimplementation of the BHARAT horn antenna research paper;
+                            we used a pyramidal horn antenna to observe the hydrogen line. Signal chain:
+                            Nooelec H1 Sawbird barebones SDR for analog-to-digital conversion, with RTL-SDR
+                            for frequency observation and data capture. Software: SDR# (SDR Sharp).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Radio Astronomy</span>
+                            <span class="tech-tag">RTL-SDR</span>
+                            <span class="tech-tag">Nooelec Sawbird</span>
+                            <span class="tech-tag">Pyramidal Horn</span>
+                            <span class="tech-tag">SDR#</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">Documentation</a>
+                            <a href="#" class="project-link" target="_blank">GitHub</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Geometry Destroyers</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Geometry Destroyers</h3>
+                        <p class="project-description">
+                            A C++ game built with the SFML library using an Entity-Component System (ECS) architecture. 
+                            You destroy spawning geometric shapes to score points; when a shape is destroyed it splits 
+                            into smaller shapes that also award points. One hit from any shape ends the run and resets 
+                            the game, so avoiding contact while clearing the screen is the challenge.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">SFML</span>
+                            <span class="tech-tag">ECS</span>
+                            <span class="tech-tag">Game Dev</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rsaumya/Geometry_Destroyers" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Programming Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">R</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Web, ML & Data</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">scikit-learn</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">Seaborn</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Tools & Platforms</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Burp Suite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new opportunities, interesting projects,
+                    or just having a conversation about technology. Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:rsaumya2001@gmail.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/rsaumya" class="contact-link" target="_blank">
+                        <span class="contact-icon">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/rsaumya2001/" class="contact-link" target="_blank">
+                        <span class="contact-icon">📝</span>
+                        <span>LeetCode</span>
+                    </a>
+                    <a href="https://linkedin.com/in/sr-mahana" class="contact-link" target="_blank">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Saumya Ranjan Mahana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
